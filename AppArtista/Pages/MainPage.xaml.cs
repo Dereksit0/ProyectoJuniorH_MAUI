@@ -1,4 +1,4 @@
-﻿namespace AppArtista
+﻿namespace AppArtista.Pages
 {
     public partial class MainPage : ContentPage
     {

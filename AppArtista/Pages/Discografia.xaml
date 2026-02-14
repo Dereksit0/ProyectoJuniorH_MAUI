@@ -1,12 +1,24 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="AppArtista.Pages.NewPage1"
-             Title="NewPage1">
+             x:Class="AppArtista.Pages.Discografia"
+             Title="Discografia">
     <VerticalStackLayout>
         <Label 
-            Text="Welcome to .NET MAUI!"
+            Text="LISTA DE ÁLBUMS DE JUNIOR H"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
+
+        <ListView x:Name="albumsListView"
+                  HorizontalOptions="Center">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <TextCell Text="{Binding Title}"
+                              Detail="{Binding ReleaseDate}"/>
+                </DataTemplate>
+
+            </ListView.ItemTemplate>
+        </ListView>
+        
     </VerticalStackLayout>
 </ContentPage>
