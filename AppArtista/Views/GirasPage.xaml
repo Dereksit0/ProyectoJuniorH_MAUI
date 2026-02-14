@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppArtista.Views.GirasPage"
+             BackgroundColor="{StaticResource Primary}"
+             Title="Tour 2026">
+
+    <Grid RowDefinitions="220, *">
+        <Grid Grid.Row="0">
+            <Image Source="junior_gira.jpg" Aspect="AspectFill" Opacity="0.6"/>
+            <BoxView Color="#AA000000"/>
+            <VerticalStackLayout VerticalOptions="Center" HorizontalOptions="Center">
+                <Label Text="SAD BOYZ MANIA" TextColor="White" FontSize="30" FontAttributes="Bold"/>
+                <Label Text="TOUR 2026" TextColor="{StaticResource Secondary}" HorizontalOptions="Center" CharacterSpacing="5"/>
+            </VerticalStackLayout>
+        </Grid>
+
+        <CollectionView Grid.Row="1" 
+                        x:Name="listaGiras" 
+                        Margin="15">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Frame Margin="0,0,0,10" Padding="0" CornerRadius="12" BackgroundColor="{StaticResource Gray900}" BorderColor="Transparent">
+                        <Grid ColumnDefinitions="10, *, Auto">
+                            <BoxView BackgroundColor="{StaticResource Secondary}" Grid.Column="0"/>
+
+                            <VerticalStackLayout Grid.Column="1" Padding="15" VerticalOptions="Center">
+                                <Label Text="{Binding Ciudad}" FontAttributes="Bold" FontSize="18" TextColor="White"/>
+                                <Label Text="{Binding Recinto}" TextColor="{StaticResource Gray400}" FontSize="13"/>
+                            </VerticalStackLayout>
+
+                            <StackLayout Grid.Column="2" BackgroundColor="{StaticResource Secondary}" Padding="15" WidthRequest="90">
+                                <Label Text="{Binding Fecha}" TextColor="White" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalOptions="Center"/>
+                            </StackLayout>
+                        </Grid>
+                    </Frame>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </Grid>
+</ContentPage>

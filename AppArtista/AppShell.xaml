@@ -4,11 +4,30 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:AppArtista"
+    xmlns:views="clr-namespace:AppArtista.Views"
     Title="AppArtista">
 
-    <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+    <TabBar>
+        <Tab Title="Inicio" Icon="dotnet_bot.png">
+            <ShellContent
+                Title="Home"
+                ContentTemplate="{DataTemplate local:MainPage}"
+                Route="MainPage" />
+        </Tab>
+
+        <Tab Title="Biografía" Icon="dotnet_bot.png">
+            <ShellContent
+                Title="Bio"
+                ContentTemplate="{DataTemplate views:BioPage}"
+                Route="BioPage" />
+        </Tab>
+
+        <Tab Title="Giras" Icon="dotnet_bot.png">
+            <ShellContent
+                Title="Giras"
+                ContentTemplate="{DataTemplate views:GirasPage}"
+                Route="GirasPage" />
+        </Tab>
+    </TabBar>
 
 </Shell>

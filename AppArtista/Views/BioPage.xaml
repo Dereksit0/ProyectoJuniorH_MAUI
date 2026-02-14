@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppArtista.Views.BioPage"
+             BackgroundColor="{StaticResource Primary}"
+             Title="Biografía">
+
+    <ScrollView>
+        <VerticalStackLayout>
+            <Grid HeightRequest="350">
+                <Image Source="junior_bio.jpg" 
+                       Aspect="AspectFill" 
+                       Opacity="0.8"/>
+                <BoxView>
+                    <BoxView.Background>
+                        <LinearGradientBrush EndPoint="0,1">
+                            <GradientStop Color="Transparent" Offset="0.4" />
+                            <GradientStop Color="{StaticResource Primary}" Offset="1.0" />
+                        </LinearGradientBrush>
+                    </BoxView.Background>
+                </BoxView>
+                <Label Text="JUNIOR H" 
+                       VerticalOptions="End" 
+                       HorizontalOptions="Center" 
+                       FontSize="40" 
+                       FontAttributes="Bold" 
+                       TextColor="White"
+                       Margin="0,0,0,20"/>
+            </Grid>
+
+            <VerticalStackLayout Padding="20" Spacing="15">
+                <Label Text="EL REY DE LOS CORRIDOS SAD" 
+                       TextColor="{StaticResource Secondary}" 
+                       FontAttributes="Bold" 
+                       FontSize="14" 
+                       CharacterSpacing="2"/>
+
+                <Label Text="Antonio Herrera Pérez (2001), conocido como Junior H, es un ícono de los corridos tumbados. Originario de Guanajuato, su estilo único mezcla letras melancólicas con ritmos urbanos, acumulando billones de reproducciones."
+                       TextColor="White" 
+                       FontSize="16" 
+                       LineHeight="1.5"/>
+
+                <Frame BackgroundColor="{StaticResource Gray950}" 
+                       BorderColor="{StaticResource Secondary}" 
+                       CornerRadius="10" 
+                       Margin="0,10">
+                    <VerticalStackLayout Spacing="5">
+                        <Label Text="LOGROS DESTACADOS" TextColor="{StaticResource Secondary}" FontAttributes="Bold"/>
+                        <Label Text="• Líder del movimiento 'Sad Boyz'" TextColor="White"/>
+                        <Label Text="• Sold out en Foro Sol y arenas internacionales" TextColor="White"/>
+                        <Label Text="• Múltiples premios Billboard y discos de platino" TextColor="White"/>
+                    </VerticalStackLayout>
+                </Frame>
+            </VerticalStackLayout>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
