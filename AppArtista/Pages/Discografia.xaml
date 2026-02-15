@@ -3,22 +3,21 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AppArtista.Pages.Discografia"
              Title="Discografia">
-    <VerticalStackLayout>
-        <Label 
-            Text="LISTA DE ÁLBUMS DE JUNIOR H"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-
-        <ListView x:Name="albumsListView"
-                  HorizontalOptions="Center">
-            <ListView.ItemTemplate>
+    <Grid>  
+        <CollectionView x:Name="albumsCollectionView"
+                      HorizontalOptions="Center">
+            <CollectionView.ItemTemplate>
                 <DataTemplate>
-                    <TextCell Text="{Binding Title}"
-                              Detail="{Binding ReleaseDate}"/>
+                    <Border Background="#212121" Stroke="#347aeb" StrokeShape="RoundRectangle 10" Margin="10" Padding="10">
+                        <VerticalStackLayout>
+                            <Label Text="{Binding Title}"
+                                   FontSize="16"/>
+                            <Label Text="{Binding ReleaseDate}"
+                                   FontSize="14"/>
+                        </VerticalStackLayout>
+                    </Border>
                 </DataTemplate>
-
-            </ListView.ItemTemplate>
-        </ListView>
-        
-    </VerticalStackLayout>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </Grid>
 </ContentPage>

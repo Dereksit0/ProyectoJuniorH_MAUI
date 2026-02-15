@@ -1,23 +1,30 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="AppArtista.Pages.MainPage"
-             BackgroundColor="#132138">
+             x:Class="AppArtista.Pages.MainPage">
 
     <Grid>
         <Image
             Source="https://idolosmx.com/wp-content/uploads/2023/11/image-5.png"
-            Aspect="AspectFit"
-            MaximumHeightRequest="1000"
-            MaximumWidthRequest="10000"
-            ZIndex="0"/>
+            Aspect="AspectFill"
+            Opacity="0.5"/>
         <VerticalStackLayout
             Padding="30,0"
-            Spacing="25">
+            Spacing="25"
+            HorizontalOptions="Center"
+            VerticalOptions="Center">
             <Label
-                Text="JUNIOR H"
+                Text="J U N I O R   H"
                 FontSize="64"
-                HorizontalOptions="Center" />
+                HorizontalOptions="Center" 
+                FontAttributes="Bold"
+                />
+            <Label
+                Text="━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+                HorizontalOptions="Center" 
+                VerticalOptions="Center"
+                TextColor="#347aeb"
+                />
         </VerticalStackLayout>
     </Grid>
 
