@@ -6,6 +6,6 @@ namespace AppArtista.Models
         public string Ciudad { get; set; }
         public string Fecha { get; set; }
         public string Recinto { get; set; }
-        public string Imagen { get; set; } // Opcional: para poner un logo o foto del lugar
+        public string Imagen { get; set; }                                   
     }
 }

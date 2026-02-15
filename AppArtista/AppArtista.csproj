@@ -65,10 +65,25 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <Compile Update="Views\DiscografiaPage.xaml.cs">
+	    <DependentUpon>DiscografiaPage.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="Views\DetalleAlbumPage.xaml.cs">
+	    <DependentUpon>DetalleAlbumPage.xaml</DependentUpon>
+	  </Compile>
+	</ItemGroup>
+
+	<ItemGroup>
 	  <MauiXaml Update="Views\BioPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\GirasPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\DiscografiaPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\DetalleAlbumPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>

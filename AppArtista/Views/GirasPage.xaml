@@ -7,7 +7,7 @@
 
     <Grid RowDefinitions="220, *">
         <Grid Grid.Row="0">
-            <Image Source="junior_gira.jpg" Aspect="AspectFill" Opacity="0.6"/>
+            <Image Source="https://lamejor.com.mx/u/fotografias/m/2024/10/15/f768x400-25047_68950_5050.png" Aspect="AspectFill" Opacity="0.6"/>
             <BoxView Color="#AA000000"/>
             <VerticalStackLayout VerticalOptions="Center" HorizontalOptions="Center">
                 <Label Text="SAD BOYZ MANIA" TextColor="White" FontSize="30" FontAttributes="Bold"/>
@@ -15,13 +15,11 @@
             </VerticalStackLayout>
         </Grid>
 
-        <CollectionView Grid.Row="1" 
-                        x:Name="listaGiras" 
-                        Margin="15">
+        <CollectionView Grid.Row="1" x:Name="listaGiras" Margin="15">
             <CollectionView.ItemTemplate>
                 <DataTemplate>
                     <Frame Margin="0,0,0,10" Padding="0" CornerRadius="12" BackgroundColor="{StaticResource Gray900}" BorderColor="Transparent">
-                        <Grid ColumnDefinitions="10, *, Auto">
+                        <Grid ColumnDefinitions="10, *, 120">
                             <BoxView BackgroundColor="{StaticResource Secondary}" Grid.Column="0"/>
 
                             <VerticalStackLayout Grid.Column="1" Padding="15" VerticalOptions="Center">
@@ -29,8 +27,13 @@
                                 <Label Text="{Binding Recinto}" TextColor="{StaticResource Gray400}" FontSize="13"/>
                             </VerticalStackLayout>
 
-                            <StackLayout Grid.Column="2" BackgroundColor="{StaticResource Secondary}" Padding="15" WidthRequest="90">
-                                <Label Text="{Binding Fecha}" TextColor="White" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalOptions="Center"/>
+                            <StackLayout Grid.Column="2" BackgroundColor="{StaticResource Secondary}" Padding="10" VerticalOptions="FillAndExpand">
+                                <Label Text="{Binding Fecha}" 
+                                       TextColor="White" 
+                                       FontAttributes="Bold" 
+                                       FontSize="14"
+                                       HorizontalTextAlignment="Center" 
+                                       VerticalOptions="CenterAndExpand"/>
                             </StackLayout>
                         </Grid>
                     </Frame>

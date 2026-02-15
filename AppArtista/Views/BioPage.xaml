@@ -8,7 +8,7 @@
     <ScrollView>
         <VerticalStackLayout>
             <Grid HeightRequest="350">
-                <Image Source="junior_bio.jpg" 
+                <Image Source="https://acrisurearena.com/wp-content/uploads/2024/05/Static_Digital-Ticketmaster_1920x1080_JuniorH_2024_Regional_AcrisureArena_0713-1024x576.jpg" 
                        Aspect="AspectFill" 
                        Opacity="0.8"/>
                 <BoxView>

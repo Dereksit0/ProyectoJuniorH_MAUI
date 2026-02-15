@@ -8,21 +8,28 @@
     Title="AppArtista">
 
     <TabBar>
-        <Tab Title="Inicio" Icon="dotnet_bot.png">
+        <Tab Title="Inicio" Icon="appicon.png">
             <ShellContent
-                Title="Home"
+                Title="Inicio"
                 ContentTemplate="{DataTemplate local:MainPage}"
                 Route="MainPage" />
         </Tab>
 
-        <Tab Title="Biografía" Icon="dotnet_bot.png">
+        <Tab Title="Biografía">
             <ShellContent
                 Title="Bio"
                 ContentTemplate="{DataTemplate views:BioPage}"
                 Route="BioPage" />
         </Tab>
 
-        <Tab Title="Giras" Icon="dotnet_bot.png">
+        <Tab Title="Discos">
+            <ShellContent
+                Title="Discografia"
+                ContentTemplate="{DataTemplate views:DiscografiaPage}"
+                Route="DiscografiaPage" />
+        </Tab>
+
+        <Tab Title="Giras">
             <ShellContent
                 Title="Giras"
                 ContentTemplate="{DataTemplate views:GirasPage}"
