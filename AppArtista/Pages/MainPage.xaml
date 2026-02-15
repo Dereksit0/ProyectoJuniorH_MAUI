@@ -4,7 +4,13 @@
              x:Class="AppArtista.Pages.MainPage"
              BackgroundColor="#132138">
 
-    <ScrollView>
+    <Grid>
+        <Image
+            Source="https://idolosmx.com/wp-content/uploads/2023/11/image-5.png"
+            Aspect="AspectFit"
+            MaximumHeightRequest="1000"
+            MaximumWidthRequest="10000"
+            ZIndex="0"/>
         <VerticalStackLayout
             Padding="30,0"
             Spacing="25">
@@ -12,14 +18,7 @@
                 Text="JUNIOR H"
                 FontSize="64"
                 HorizontalOptions="Center" />
-            <Image
-                Source="https://i.scdn.co/image/ab6761610000e5eb5fbe9b7dc7d9a2295bd6022c"
-                HeightRequest="250"
-                Aspect="AspectFit"
-                SemanticProperties.Description="dot net bot in a hovercraft number nine" />
-
-       
         </VerticalStackLayout>
-    </ScrollView>
+    </Grid>
 
 </ContentPage>

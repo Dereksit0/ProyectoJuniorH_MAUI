@@ -9,6 +9,6 @@
     Title="AppArtista">
 
     <ShellContent Title = "Giras/Presentaciones" 
-      ContentTemplate="{DataTemplate pages:Discografia}" />
+      ContentTemplate="{DataTemplate pages:MainPage}" />
 
 </Shell>
