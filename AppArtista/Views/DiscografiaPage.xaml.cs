@@ -3,6 +3,8 @@ using System.Collections.ObjectModel;
 
 namespace AppArtista.Views;
 
+// Página que muestra la discografía del artista, con una lista de álbumes y sus detalles
+
 public partial class DiscografiaPage : ContentPage
 {
     public ObservableCollection<Album> MisAlbumes { get; set; }

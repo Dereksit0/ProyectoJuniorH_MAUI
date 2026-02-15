@@ -5,6 +5,7 @@
              BackgroundColor="{StaticResource Primary}"
              Title="Biografía">
 
+    
     <ScrollView>
         <VerticalStackLayout>
             <Grid HeightRequest="350">

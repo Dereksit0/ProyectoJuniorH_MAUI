@@ -4,6 +4,8 @@ using System.Linq;
 
 namespace AppArtista.Views
 {
+    // Página que muestra las giras y conciertos del artista, con una lista de eventos próximos y pasados
+
     public partial class GirasPage : ContentPage
     {
         public ObservableCollection<Concierto> ListaEventos { get; set; }

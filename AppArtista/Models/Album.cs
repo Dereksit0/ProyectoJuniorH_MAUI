@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace AppArtista.Models
 {
+    // Clase que representa el modelo de datos para un álbum musical
     public class Album
     {
         public string Nombre { get; set; }

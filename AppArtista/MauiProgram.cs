@@ -1,5 +1,7 @@
 ﻿using Microsoft.Extensions.Logging;
 
+// Clase principal de la aplicación, donde se configura y se construye la aplicación Maui
+
 namespace AppArtista
 {
     public static class MauiProgram
