@@ -15,5 +15,7 @@ namespace AppArtista.Models
         public string Genre { get; set; } = string.Empty;
 
         public string Description { get; set; } = string.Empty;
+
+        public string ImageLink { get; set; } = string.Empty;
     }
 }

@@ -74,6 +74,9 @@
 	  <MauiXaml Update="Pages\Biografia.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="Pages\DetailAlbumPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Pages\Discografia.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>

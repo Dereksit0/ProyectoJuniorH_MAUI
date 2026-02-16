@@ -2,22 +2,38 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AppArtista.Pages.Discografia"
-             Title="Discografia">
-    <Grid>  
-        <CollectionView x:Name="albumsCollectionView"
-                      HorizontalOptions="Center">
-            <CollectionView.ItemTemplate>
+             Title="Discografía">
+
+    <Grid>
+        <ListView x:Name="albumsCollectionView"
+                  HorizontalOptions="FillAndExpand"
+                  VerticalOptions="FillAndExpand"
+                  ItemSelected="OnAlbumSelected">
+            <ListView.ItemTemplate>
                 <DataTemplate>
-                    <Border Background="#212121" Stroke="#347aeb" StrokeShape="RoundRectangle 10" Margin="10" Padding="10">
-                        <VerticalStackLayout>
-                            <Label Text="{Binding Title}"
-                                   FontSize="16"/>
-                            <Label Text="{Binding ReleaseDate}"
-                                   FontSize="14"/>
-                        </VerticalStackLayout>
-                    </Border>
+                    <ViewCell>
+                        <Frame
+                            Margin="8"
+                            Padding="15"
+                            CornerRadius="12"
+                            BackgroundColor="#212121">
+                            <StackLayout
+                                    Padding="12,0,0,0"
+                                    Spacing="4">
+                                    <Label
+                                        Text="{Binding Title}"
+                                        FontSize="18"
+                                        FontAttributes="Bold"
+                                        TextColor="White"/>
+                                    <Label
+                                        Text="{Binding ReleaseDate}"
+                                        FontSize="13"
+                                        TextColor="White"/>
+                                </StackLayout>
+                        </Frame>
+                    </ViewCell>
                 </DataTemplate>
-            </CollectionView.ItemTemplate>
-        </CollectionView>
+            </ListView.ItemTemplate>
+        </ListView>
     </Grid>
 </ContentPage>

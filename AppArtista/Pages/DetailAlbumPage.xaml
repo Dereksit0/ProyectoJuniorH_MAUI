@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="AppArtista.Pages.DetailAlbumPage" 
+             Title="DetailAlbumPage">
+
+    <VerticalStackLayout Margin="15">
+        <Image x:Name="imageLabel" HeightRequest="200" WidthRequest="200" HorizontalOptions="Center"/>
+        <Label Text="&#x0a;"/>
+        <Label x:Name="titleLabel" FontSize="24" HorizontalOptions="Center"/>
+        <Label x:Name="releaseDateLabel" FontSize="24" HorizontalOptions="Center"/>
+        <Label Text="&#x0a;"/>
+        <Label x:Name="genreLabel" FontSize="24" HorizontalOptions="Center"/>
+        <Label Text="&#x0a;"/>
+        <Label x:Name="descriptionLabel" FontSize="24" HorizontalOptions="Center"/>
+    </VerticalStackLayout>
+</ContentPage>
