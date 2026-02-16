@@ -16,14 +16,21 @@
         <ShellContent Title = "Biografia" 
         ContentTemplate="{DataTemplate pages:Biografia}" />
     </FlyoutItem>
-    <FlyoutItem Title="Discografia"> 
+    <FlyoutItem Title="Discografia">
         <ShellContent Title = "Discografia" 
         ContentTemplate="{DataTemplate pages:Discografia}" />
     </FlyoutItem>
     <FlyoutItem Title="Eventos">
-        <ShellContent Title = "Eventos" 
-        ContentTemplate="{DataTemplate pages:Eventos}" />
+        <Tab Title="Pasados">
+                <ShellContent Title="Pasados"
+                ContentTemplate="{DataTemplate pages:Eventos}" />
+            </Tab>
+        <Tab Title="Proximos">
+            <ShellContent Title="Proximos"
+                ContentTemplate="{DataTemplate pages:EventosPr}" />
+        </Tab>
     </FlyoutItem>
-    
+
+
 
 </Shell>

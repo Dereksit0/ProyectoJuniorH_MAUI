@@ -10,6 +10,10 @@
             Routing.RegisterRoute(nameof(Pages.DetailAlbumPage), typeof(Pages.DetailAlbumPage));
             Routing.RegisterRoute(nameof(Pages.Biografia), typeof(Pages.Biografia));
             Routing.RegisterRoute(nameof(Pages.Eventos), typeof(Pages.Eventos));
+            Routing.RegisterRoute(nameof(Pages.EventosPr), typeof(Pages.EventosPr));
+            Routing.RegisterRoute(nameof(Pages.DetailEventPage), typeof(Pages.DetailEventPage));
+            Routing.RegisterRoute(nameof(Pages.DetailEventPageProx), typeof(Pages.DetailEventPageProx));
+
         }
     }
 }
