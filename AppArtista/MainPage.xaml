@@ -2,24 +2,33 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AppArtista.MainPage"
-             BackgroundColor="{StaticResource Primary}">
-
+             BackgroundColor="{DynamicResource AppFondo}">
     <Grid>
         <Image Source="https://idolosmx.com/wp-content/uploads/2023/11/image-5.png" 
                Aspect="AspectFill" 
                Opacity="0.7"/>
 
-        <VerticalStackLayout VerticalOptions="Center" HorizontalOptions="Center">
+        <VerticalStackLayout VerticalOptions="Center" HorizontalOptions="Center" Spacing="20">
             <Label Text="JUNIOR H" 
                    FontSize="48" 
                    FontAttributes="Bold" 
-                   TextColor="White" 
-                   CharacterSpacing="5"/>
-            <BoxView Color="{StaticResource Secondary}" 
+                   TextColor="{DynamicResource AppTexto}" CharacterSpacing="5"/>
+
+            <BoxView x:Name="LineaDecorativa"
+                     Color="{DynamicResource DinamicoJunior}" 
                      HeightRequest="4" 
                      WidthRequest="100" 
-                     HorizontalOptions="Center" 
-                     Margin="0,10,0,0"/>
+                     HorizontalOptions="Center" />
+
+            <Button x:Name="BtnCambiar"
+                    Text="CAMBIAR ESTILO"
+                    Clicked="OnCambiarColorClicked"
+                    HorizontalOptions="Center"
+                    BackgroundColor="{DynamicResource BotonFondo}"
+                    TextColor="{DynamicResource BotonTexto}"
+                    WidthRequest="{DynamicResource BotonAncho}"
+                    CornerRadius="0"
+                    FontAttributes="Bold"/>
         </VerticalStackLayout>
     </Grid>
 </ContentPage>
