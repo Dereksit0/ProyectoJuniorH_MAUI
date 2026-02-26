@@ -7,37 +7,35 @@
         public MainPage()
         {
             InitializeComponent();
+            // Forzamos el estado inicial claro para evitar pantallas negras al arrancar
+            AplicarTema(false);
         }
 
         private void OnCambiarColorClicked(object sender, EventArgs e)
         {
             esModoSad = !esModoSad;
+            AplicarTema(esModoSad);
+        }
 
-            if (esModoSad)
+        private void AplicarTema(bool sad)
+        {
+            if (sad) // --- MODO SAD ---
             {
-                // MODO MAGENTA
                 Application.Current.Resources["AppFondo"] = Color.FromArgb("#101010");
-                Application.Current.Resources["AppTexto"] = Color.FromArgb("#D600AA");
-                Application.Current.Resources["AppAcento"] = Color.FromArgb("#D600AA");
+                Application.Current.Resources["AppTexto"] = Color.FromArgb("#D600AA"); // Magenta
                 Application.Current.Resources["DinamicoJunior"] = Color.FromArgb("#D600AA");
                 Application.Current.Resources["BotonFondo"] = Color.FromArgb("#D600AA");
                 Application.Current.Resources["BotonTexto"] = Color.FromArgb("#FFFFFF");
-
-                LineaDecorativa.WidthRequest = 300;
-                BtnCambiar.Text = "VOLVER AL ORIGEN";
+                BtnCambiar.Text = "MODO CLARO";
             }
-            else
+            else // --- MODO CLARO ---
             {
-                // MODO ORIGINAL
-                Application.Current.Resources["AppFondo"] = Color.FromArgb("#000000");
-                Application.Current.Resources["AppTexto"] = Color.FromArgb("#FFFFFF");
-                Application.Current.Resources["AppAcento"] = Color.FromArgb("#0047AB");
-                Application.Current.Resources["DinamicoJunior"] = Color.FromArgb("#0047AB");
-                Application.Current.Resources["BotonFondo"] = Color.FromArgb("#FFFFFF");
-                Application.Current.Resources["BotonTexto"] = Color.FromArgb("#000000");
-
-                LineaDecorativa.WidthRequest = 100;
-                BtnCambiar.Text = "CAMBIAR ESTILO";
+                Application.Current.Resources["AppFondo"] = Color.FromArgb("#FFFFFF");
+                Application.Current.Resources["AppTexto"] = Color.FromArgb("#000000"); // Negro
+                Application.Current.Resources["DinamicoJunior"] = Color.FromArgb("#0047AB"); // Azul
+                Application.Current.Resources["BotonFondo"] = Color.FromArgb("#000000");
+                Application.Current.Resources["BotonTexto"] = Color.FromArgb("#FFFFFF");
+                BtnCambiar.Text = "MODO SAD";
             }
         }
     }

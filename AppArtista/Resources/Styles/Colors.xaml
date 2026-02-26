@@ -2,32 +2,30 @@
 <ResourceDictionary xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
                     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
 
-    <Color x:Key="AppFondo">#000000</Color>
-    <Color x:Key="AppTexto">#FFFFFF</Color>
-    <Color x:Key="AppAcento">#0047AB</Color>
+    <Color x:Key="AppFondo">#FFFFFF</Color>
+    <Color x:Key="AppTexto">#000000</Color>
     <Color x:Key="DinamicoJunior">#0047AB</Color>
-    <Color x:Key="BotonFondo">#FFFFFF</Color>
-    <Color x:Key="BotonTexto">#000000</Color>
+    <Color x:Key="BotonFondo">#000000</Color>
+    <Color x:Key="BotonTexto">#FFFFFF</Color>
     <x:Double x:Key="BotonAncho">200</x:Double>
 
     <Color x:Key="Primary">#000000</Color>
-    <Color x:Key="Secondary">#0047AB</Color>
-    <Color x:Key="White">#FFFFFF</Color>
-    <Color x:Key="Black">#000000</Color>
-    <Color x:Key="OffBlack">#101010</Color>
-    <Color x:Key="Magenta">#D600AA</Color>
-    <Color x:Key="MidnightBlue">#191970</Color>
-
-    <Color x:Key="PrimaryDark">#141414</Color>
+    <Color x:Key="PrimaryDark">#121212</Color>
     <Color x:Key="PrimaryDarkText">#FFFFFF</Color>
-    <Color x:Key="SecondaryDarkText">#E1E1E1</Color>
-    <Color x:Key="Gray100">#F2F2F2</Color>
-    <Color x:Key="Gray200">#E1E1E1</Color>
-    <Color x:Key="Gray300">#CFCFCF</Color>
-    <Color x:Key="Gray400">#BDBDBD</Color>
-    <Color x:Key="Gray500">#6E6E6E</Color>
-    <Color x:Key="Gray600">#4A4A4A</Color>
-    <Color x:Key="Gray900">#212121</Color>
-    <Color x:Key="Gray950">#141414</Color>
+    <Color x:Key="Secondary">#0047AB</Color>
+    <Color x:Key="MidnightBlue">#191970</Color>
+    <Color x:Key="OffBlack">#1F1F1F</Color>
+    <Color x:Key="SecondaryDarkText">#999999</Color>
+    <Color x:Key="Magenta">#D600AA</Color>
+    <Color x:Key="Black">#000000</Color>
+    <Color x:Key="White">#FFFFFF</Color>
 
+    <Color x:Key="Gray100">#E1E1E1</Color>
+    <Color x:Key="Gray200">#CFCFCF</Color>
+    <Color x:Key="Gray300">#B0B0B0</Color>
+    <Color x:Key="Gray400">#919191</Color>
+    <Color x:Key="Gray500">#666666</Color>
+    <Color x:Key="Gray600">#404040</Color>
+    <Color x:Key="Gray900">#212121</Color>
+    <Color x:Key="Gray950">#121212</Color>
 </ResourceDictionary>

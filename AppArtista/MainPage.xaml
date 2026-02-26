@@ -6,13 +6,14 @@
     <Grid>
         <Image Source="https://idolosmx.com/wp-content/uploads/2023/11/image-5.png" 
                Aspect="AspectFill" 
-               Opacity="0.7"/>
-
+               Opacity="0.5"/>
         <VerticalStackLayout VerticalOptions="Center" HorizontalOptions="Center" Spacing="20">
             <Label Text="JUNIOR H" 
                    FontSize="48" 
                    FontAttributes="Bold" 
-                   TextColor="{DynamicResource AppTexto}" CharacterSpacing="5"/>
+                   TextColor="{DynamicResource AppTexto}" 
+                   CharacterSpacing="5"
+                   HorizontalOptions="Center"/>
 
             <BoxView x:Name="LineaDecorativa"
                      Color="{DynamicResource DinamicoJunior}" 
@@ -21,12 +22,12 @@
                      HorizontalOptions="Center" />
 
             <Button x:Name="BtnCambiar"
-                    Text="CAMBIAR ESTILO"
+                    Text="MODO SAD"
                     Clicked="OnCambiarColorClicked"
                     HorizontalOptions="Center"
                     BackgroundColor="{DynamicResource BotonFondo}"
                     TextColor="{DynamicResource BotonTexto}"
-                    WidthRequest="{DynamicResource BotonAncho}"
+                    WidthRequest="{StaticResource BotonAncho}"
                     CornerRadius="0"
                     FontAttributes="Bold"/>
         </VerticalStackLayout>
