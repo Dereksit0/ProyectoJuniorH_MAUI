@@ -2,16 +2,22 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AppArtista.Pages.DetailEventPage"
-             Title="DetailEventPage">
+             Title="DetailEventPage"
+             BackgroundColor="{DynamicResource PageBackground}">
     <ScrollView>
         <VerticalStackLayout Margin="15">
+            <Button 
+            Text="Cambiar modo"
+            Clicked="OnToggleThemeClicked"
+            HorizontalOptions="End"
+            BackgroundColor="{DynamicResource PrimaryColor}"/>
             <Image Source="https://abcnoticias.mx/u/fotografias/m/2025/8/26/f638x638-313145_371312_5050.png" HeightRequest="400" WidthRequest="400" HorizontalOptions="Center" Opacity="0.7"/>
             <Label Text="&#x0a;"/>
-            <Label x:Name="dateLabel" FontSize="24" HorizontalOptions="Center"/>
-            <Label x:Name="cityLabel" FontSize="24" HorizontalOptions="Center"/>
-            <Label x:Name="countryLabel" FontSize="24" HorizontalOptions="Center"/>
+            <Label x:Name="dateLabel" Style="{StaticResource SubtitleStyle}"/>
+            <Label x:Name="cityLabel" Style="{StaticResource SubtitleStyle}"/>
+            <Label x:Name="countryLabel" Style="{StaticResource SubtitleStyle}"/>
             <Label Text="&#x0a;"/>
-            <Label x:Name="descriptionLabel" FontSize="24" HorizontalOptions="Center"/>
+            <Label x:Name="descriptionLabel" Style="{StaticResource SubtitleStyle}"/>
         </VerticalStackLayout>
     </ScrollView>
     

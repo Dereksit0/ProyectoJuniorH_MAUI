@@ -2,17 +2,23 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AppArtista.Pages.DetailEventPageProx"
-             Title="Eventos Proximos">
+             Title="Eventos Proximos"
+             BackgroundColor="{DynamicResource PageBackground}">
     <ScrollView>
         <VerticalStackLayout Margin="15">
+            <Button 
+            Text="Cambiar modo"
+            Clicked="OnToggleThemeClicked"
+            HorizontalOptions="End"
+            BackgroundColor="{DynamicResource PrimaryColor}"/>
             <Image Source="https://indierocks.sfo3.digitaloceanspaces.com/wp-content/uploads/2023/11/IMG_2924.png" Opacity="0.7" HeightRequest="400" WidthRequest="400" HorizontalOptions="Center"/>
             <Label Text="&#x0a;"/>
-            <Label x:Name="dateLabelPr" FontSize="24" HorizontalOptions="Center"/>
-            <Label x:Name="cityLabelPr" FontSize="24" HorizontalOptions="Center"/>
-            <Label x:Name="countryLabelPr" FontSize="24" HorizontalOptions="Center"/>
+            <Label x:Name="dateLabelPr" Style="{StaticResource SubtitleStyle}"/>
+            <Label x:Name="cityLabelPr" Style="{StaticResource SubtitleStyle}"/>
+            <Label x:Name="countryLabelPr" Style="{StaticResource SubtitleStyle}"/>
             <Label Text="&#x0a;"/>
-            <Label x:Name="descriptionLabelPr" FontSize="24" HorizontalOptions="Center"/>
-            <Label x:Name="timeLabelPr" FontSize="24"
+            <Label x:Name="descriptionLabelPr" Style="{StaticResource SubtitleStyle}"/>
+            <Label x:Name="timeLabelPr" Style="{StaticResource SubtitleStyle}"
            HorizontalOptions="Center"/>
         </VerticalStackLayout>
     </ScrollView>

@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ResourceDictionary 
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    x:Class="AppArtista.Resources.Styles.MyResource">
+
+    <!-- Colores -->
+
+    <Color x:Key="PrimaryColor">#347aeb</Color>
+    <Color x:Key="BackgroundDark">#121212</Color>
+    <Color x:Key="CardBackground">#212121</Color>
+    
+    <Color x:Key="TextWhite">White</Color>
+    <Color x:Key="TextColor">White</Color>
+    <Color x:Key="PageBackground">#121212</Color>
+
+    <!-- Estilos de texto generales -->
+
+    <Style x:Key="TitleStyle" TargetType="Label">
+        <Setter Property="FontSize" Value="32"/>
+        <Setter Property="FontAttributes" Value="Bold"/>
+        <Setter Property="TextColor" Value="{DynamicResource TextWhite}"/>
+        <Setter Property="HorizontalOptions" Value="Center"/>
+    </Style>
+
+    <Style x:Key="SubtitleStyle" TargetType="Label">
+        <Setter Property="FontSize" Value="21"/>
+        <Setter Property="TextColor" Value="{DynamicResource TextWhite}"/>
+    </Style>
+
+    <Style x:Key="NormalTextStyle" TargetType="Label">
+        <Setter Property="FontSize" Value="18"/>
+        <Setter Property="TextColor" Value="{DynamicResource TextWhite}"/>
+    </Style>
+
+    <!-- Estilo para el Border en Biografia -->
+
+    <Style x:Key="CardStyle" TargetType="Border">
+        <Setter Property="Margin" Value="8"/>
+        <Setter Property="Padding" Value="15"/>
+        <Setter Property="StrokeShape" Value="RoundRectangle 10"/>
+        <Setter Property="Stroke" Value="{DynamicResource PrimaryColor}"/>
+        <Setter Property="BackgroundColor" Value="{DynamicResource CardBackground}"/>
+    </Style>
+
+
+    <!-- Estilo para los textos de biografia -->
+
+    <Style x:Key="BiographyTextStyle" TargetType="Label">
+        <Setter Property="FontSize" Value="20"/>
+        <Setter Property="TextColor" Value="{DynamicResource TextWhite}"/>
+    </Style>
+
+    <Style x:Key="SectionTitleStyle" TargetType="Label">
+        <Setter Property="FontSize" Value="21"/>
+        <Setter Property="FontAttributes" Value="Bold"/>
+        <Setter Property="TextColor" Value="{DynamicResource PrimaryColor}"/>
+    </Style>
+
+    <Style x:Key="AchievementTextStyle" TargetType="Label">
+        <Setter Property="FontSize" Value="18"/>
+        <Setter Property="TextColor" Value="{DynamicResource TextWhite}"/>
+    </Style>
+
+</ResourceDictionary>

@@ -28,4 +28,24 @@ public partial class DetailEventPageProx : ContentPage
 		descriptionLabelPr.Text = _eventosProximos.Description;
 		timeLabelPr.Text = $"Hora: {_eventosProximos.Time}";
     }
+
+    bool isDark = true;
+
+    private void OnToggleThemeClicked(object sender, EventArgs e)
+    {
+        if (isDark)
+        {
+            Resources["PageBackground"] = Colors.White;
+            Resources["TextColor"] = Colors.Black;
+            Resources["TextWhite"] = Colors.Black;
+        }
+        else
+        {
+            Resources["PageBackground"] = Color.FromArgb("#121212");
+            Resources["TextColor"] = Colors.White;
+            Resources["TextWhite"] = Colors.White;
+        }
+
+        isDark = !isDark;
+    }
 }

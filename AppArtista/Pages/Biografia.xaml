@@ -6,43 +6,34 @@
     <ScrollView>
         <Grid>
             <Image Source="https://images.sk-static.com/images/media/profile_images/artists/10071844/huge_avatar"
-        Aspect="AspectFill"
-        Opacity="0.5"/>
+                    Aspect="AspectFill"
+                    Opacity="0.5"/>
             <VerticalStackLayout Padding="15" Margin="15">
                 <Label 
-            Text="JUNIOR H"
-            FontAttributes="Bold"
-            FontSize="64"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+                    Text="JUNIOR H"
+                    Style="{StaticResource TitleStyle}" />
                 <Label 
-            Text="Junior H, cuyo nombre real es Antonio Herrera Pérez, nació en Guanajuato, México, en el año 2000. Desde joven mostró interés por la música y comenzó a componer de manera autodidacta, publicando sus primeras canciones en plataformas digitales."
-            FontSize="18"/>
+                    Text="Junior H, cuyo nombre real es Antonio Herrera Pérez, nació en Guanajuato, México, en el año 2000. Desde joven mostró interés por la música y comenzó a componer de manera autodidacta, publicando sus primeras canciones en plataformas digitales."
+                    Style="{StaticResource NormalTextStyle}"/>
                 <Label 
-            Text="&#x0a;Su carrera despegó en 2019 con el tema “No He Cambiado”, consolidándose como una de las figuras principales de los corridos tumbados. A lo largo de los años ha lanzado varios álbumes exitosos, ha colaborado con artistas reconocidos del género y se ha destacado por fusionar sonidos tradicionales con influencias modernas, convirtiéndose en uno de los referentes de la música regional mexicana actual."
-            FontSize="18"/>
-                <Border Margin="0, 30, 0, 0"
-                BackgroundColor="#212121"
-                Stroke="#347aeb"
-                StrokeShape="RoundRectangle 10"
-                Shadow="True">
+                    Text="&#x0a;Su carrera despegó en 2019 con el tema “No He Cambiado”, consolidándose como una de las figuras principales de los corridos tumbados. A lo largo de los años ha lanzado varios álbumes exitosos, ha colaborado con artistas reconocidos del género y se ha destacado por fusionar sonidos tradicionales con influencias modernas, convirtiéndose en uno de los referentes de la música regional mexicana actual."
+                    Style="{StaticResource NormalTextStyle}"/>
+                <Border Style="{StaticResource CardStyle}">
                     <VerticalStackLayout Margin="10">
                         <Label Text="LOGROS DESTACADOS&#x0a;"
-           TextColor="#347aeb"
-           FontSize="22"
-        />
+                               Style="{StaticResource SectionTitleStyle}"/>
                         <Label Text=" - Alcanzó la fama internacional en 2019 con el éxito 'No he cambiado', que lo posicionó en plataformas digitales."
-           FontSize="18"/>
+                               Style="{StaticResource AchievementTextStyle}"/>
                         <Label Text=" - Se consolidó como uno de los principales exponentes de los corridos tumbados."
-           FontSize="18"/>
+                               Style="{StaticResource AchievementTextStyle}"/>
                         <Label Text=" - Ha logrado millones de reproducciones en Spotify, YouTube y otras plataformas de streaming."
-           FontSize="18"/>
+                               Style="{StaticResource AchievementTextStyle}"/>
                         <Label Text=" - Ha colocado varios álbumes y sencillos en listas de popularidad en México y Estados Unidos."
-           FontSize="18"/>
+                               Style="{StaticResource AchievementTextStyle}"/>
                         <Label Text=" - Ha colaborado con artistas importantes del regional mexicano y el género urbano."
-           FontSize="18"/>
+                               Style="{StaticResource AchievementTextStyle}"/>
                         <Label Text=" - Ha realizado giras y presentaciones en escenarios relevantes de México y el extranjero."
-           FontSize="18"/>
+                               Style="{StaticResource AchievementTextStyle}"/>
                     </VerticalStackLayout>
                 </Border>
             </VerticalStackLayout>

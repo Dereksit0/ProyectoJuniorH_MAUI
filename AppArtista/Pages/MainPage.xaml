@@ -15,17 +15,38 @@
             VerticalOptions="Center">
             <Label
                 Text="J U N I O R   H"
-                FontSize="64"
-                HorizontalOptions="Center" 
-                FontAttributes="Bold"
-                />
+                Style="{StaticResource TitleStyle}" />
             <Label
                 Text="━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
                 HorizontalOptions="Center" 
                 VerticalOptions="Center"
-                TextColor="#347aeb"
+                TextColor="{DynamicResource PrimaryColor}"
                 />
         </VerticalStackLayout>
+        <HorizontalStackLayout
+            HorizontalOptions="Center"
+            VerticalOptions="End"
+            Padding="0,0,0,30"
+            Spacing="20">
+            
+            <Button Text="Azul"
+                    FontAttributes="Bold"
+                    Clicked="OnBlueClicked"
+                    BackgroundColor="{DynamicResource PrimaryColor}"
+                    TextColor="{StaticResource TextWhite}"/>
+
+            <Button Text="Dorado"
+                    FontAttributes="Bold"
+                    Clicked="OnGoldClicked"
+                    BackgroundColor="{DynamicResource PrimaryColor}"
+                    TextColor="{StaticResource TextWhite}"/>
+
+            <Button Text="Rojo"
+                    FontAttributes="Bold"
+                    Clicked="OnRedClicked"
+                    BackgroundColor="{DynamicResource PrimaryColor}"
+                    TextColor="{StaticResource TextWhite}"/>
+        </HorizontalStackLayout>
     </Grid>
 
 </ContentPage>

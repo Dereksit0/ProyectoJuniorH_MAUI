@@ -12,23 +12,19 @@
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
-                            <Frame
-                        Margin="8"
-                        Padding="15"
-                        CornerRadius="12"
-                        BackgroundColor="#212121">
+                            <Frame Style="{StaticResource CardStyle}">
                                 <StackLayout
-                                Padding="12,0,0,0"
-                                Spacing="4">
+                                        Padding="12,0,0,0"
+                                        Spacing="4">
                                     <Label
-                                    Text="{Binding Title}"
-                                    FontSize="18"
-                                    FontAttributes="Bold"
-                                    TextColor="White"/>
+                                        Text="{Binding Title}"
+                                        FontSize="18"
+                                        FontAttributes="Bold"
+                                        TextColor="{DynamicResource TextWhite}"/>
                                     <Label
-                                    Text="{Binding ReleaseDate}"
-                                    FontSize="13"
-                                    TextColor="White"/>
+                                        Text="{Binding ReleaseDate}"
+                                        FontSize="13"
+                                        TextColor="{DynamicResource TextWhite}"/>
                                 </StackLayout>
                             </Frame>
                         </ViewCell>

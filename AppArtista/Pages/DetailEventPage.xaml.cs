@@ -27,4 +27,24 @@ public partial class DetailEventPage : ContentPage
         countryLabel.Text = _eventosPasados.Country;
         descriptionLabel.Text = _eventosPasados.Description;
     }
+
+    bool isDark = true;
+
+    private void OnToggleThemeClicked(object sender, EventArgs e)
+    {
+        if (isDark)
+        {
+            Resources["PageBackground"] = Colors.White;
+            Resources["TextColor"] = Colors.Black;
+            Resources["TextWhite"] = Colors.Black;
+        }
+        else
+        {
+            Resources["PageBackground"] = Color.FromArgb("#121212");
+            Resources["TextColor"] = Colors.White;
+            Resources["TextWhite"] = Colors.White;
+        }
+
+        isDark = !isDark;
+    }
 }

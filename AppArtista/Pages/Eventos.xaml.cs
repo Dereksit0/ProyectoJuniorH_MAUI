@@ -30,4 +30,5 @@ public partial class Eventos : ContentPage
             eventListView.SelectedItem = null;
         }
     }
+
 }
